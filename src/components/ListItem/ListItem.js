@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import s from './ListItem.module.css';
 
 const ListItem = ({ name, number, onClick }) => {
     return (    
-            <li><p>{name}: {number}</p>
-                <button type="button"
+            <li className={s.item}><p className={s.text}>{name}: {number}</p>
+                <button className={s.button} type="button"
                     onClick={onClick}
                 >Delete</button></li>
         )
