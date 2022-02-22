@@ -8,7 +8,12 @@ const ListItem = ({ name, number, onClick }) => {
                     onClick={onClick}
                 >Delete</button></li>
         )
-        }
-    
+}
+        
+    ListItem.propTypes = {
+        name: PropTypes.string.isRequired,
+        number: PropTypes.string.isRequired,
+        onClick: PropTypes.func.isRequired,  
+}
 
 export default ListItem;
